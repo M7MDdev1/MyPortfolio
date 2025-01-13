@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        shantell: ['"ShantellSans"', "sans-serif"],
-        playfair: ['"PlayfairDisplay"', "serif"],
-        roboto: ['"Roboto"', "sans-serif"],
+        Manrope: ['"Manrope"', "serif"],
+        Inter: ['"Inter"', "serif"],
       },
       boxShadow: {
         'Skills': '1px 1px 79px 0px rgba(105, 2, 180, 0.54)',
