@@ -10,9 +10,14 @@ export default {
         Manrope: ['"Manrope"', "serif"],
         Inter: ['"Inter"', "serif"],
       },
-      boxShadow: {
-        'Skills': '1px 1px 79px 0px rgba(105, 2, 180, 0.54)',
+      colors: {
+        dark12: 'var(--Dark-12, #1C1C21)',
       },
+      backgroundImage: {
+        HomeColor: "linear-gradient(0deg, rgba(22, 21, 19, 0.78) 0%, rgba(22, 21, 19, 0.78) 100%), conic-gradient(from 168deg at 50% 33.01%, rgba(93, 48, 190, 0.43) 126deg, rgba(31, 19, 165, 0.48) 310deg)",
+      },
+
+
     },
   },
   plugins: [],

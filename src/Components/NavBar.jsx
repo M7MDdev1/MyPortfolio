@@ -1,23 +1,22 @@
-import { IoIosMenu } from "react-icons/io";
+import { HiMenuAlt3 } from "react-icons/hi";
 
+// eslint-disable-next-line react/prop-types
 export default function NavBar({ visibility, setVisibility }) {
   return (
-<>
-<div className={"hidden sm:flex justify-between items-center px-12"}>
-    <img src="public/Logo.png" alt="" className={"w-[135px]"} />
-    <div className="flex gap-6 text-[#373737] font-medium items-center">
-    <a href={"#home"}>Home</a>
-    <a href={"#aboutme"}>About Me</a>
-    <a href={"#contact"}>Contact</a>
-    <a href={"/"} className="rounded-xl text-white bg-[#282B2E] px-4 py-2">Resume</a>
+    <div
+      className={
+        "sm:hidden mx-auto py-5 border-b border-x border-dark12 px-4"
+      }
+    >
+      <div className="flex justify-between items-center pt-10">
+        <img src="W_Logo.png" alt="Logo" className={"h-12 pl-6"} />
+        <HiMenuAlt3
+          color="white"
+          className="mr-3 cursor-pointer"
+          size={24}
+          onClick={() => setVisibility(!visibility)}
+        />
+      </div>
     </div>
-  </div>
-
-    <div className={"sm:hidden mt-11 mx-auto w-[90%] bg-[#4D80FF0D] py-5 flex justify-between items-center"}>
-      <img src="public/Logo.png" alt="Logo" className={"h-9 pl-6"} />
-      <IoIosMenu className="mr-3 cursor-pointer" size={24} onClick={() => setVisibility(!visibility)} />
-    </div>
-</>
-  
   );
 }

@@ -1,0 +1,14 @@
+#main {
+    background: 
+      linear-gradient(
+        0deg,
+        rgba(22, 21, 19, 0.78) 0%,
+        rgba(22, 21, 19, 0.78) 100%
+      ),
+      conic-gradient(
+        from 168deg at 50% 33.01%,
+        rgba(93, 48, 190, 0.43) 125.99999785423279deg,
+        rgba(31, 19, 165, 0.48) 309.6000051498413deg
+      
+    );
+  }
