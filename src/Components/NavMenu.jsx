@@ -1,4 +1,5 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
+import { Link } from "react-router";
 
 // eslint-disable-next-line react/prop-types
 export default function NavMenu({ visibility, setNavMenuVisibility }) {
@@ -24,18 +25,18 @@ export default function NavMenu({ visibility, setNavMenuVisibility }) {
 
         <div className="flex flex-col items-center justify-center gap-y-4 px-[0.88rem] py-[2.19rem] text-[#AFB0B6] text-[0.875rem] font-Manrope">
           <button className="py-6 px-[1.88rem]" onClick={handleVisibility}>
-            <a href="#home">Home</a>
+            <Link to="/">Home</Link>
           </button>
           <button className="py-6 px-[1.88rem]" onClick={handleVisibility}>
-            <a href="#Portfolio">Portfolio</a>
-          </button>
-
-          <button className="py-6 px-[1.88rem]" onClick={handleVisibility}>
-            <a href="#aboutme">About me</a>
+            <Link to="/Portfolio">Portfolio</Link>
           </button>
 
           <button className="py-6 px-[1.88rem]" onClick={handleVisibility}>
-            <a href="#contact">Contact me</a>
+            <Link to="/About">About me</Link>
+          </button>
+
+          <button className="py-6 px-[1.88rem]" onClick={handleVisibility}>
+            <Link to="/Contact">Contact me</Link>
           </button>
         </div>
 

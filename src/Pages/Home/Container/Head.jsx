@@ -1,4 +1,5 @@
 import { HiOutlineArrowUpRight } from "react-icons/hi2";
+import { Link } from "react-router";
 
 export default function Head() {
   return (
@@ -10,9 +11,9 @@ export default function Head() {
     <div className="text-[1.75rem] font-semibold">
       <div className="flex items-center gap-x-2 mb-1">
         <p>LET&apos;s</p>
-        <div className="rounded-[6.25rem] bg-[#4A2CED] shadow-arrow-shadow px-[1.875rem] py-[0.875rem]">
+        <Link to={"/Contact"} className="rounded-[6.25rem] bg-[#4A2CED] shadow-arrow-shadow px-[1.875rem] py-[0.875rem]">
           <HiOutlineArrowUpRight />
-        </div>
+        </Link>
       </div>
       <p>WORK TOGETHER</p>
     </div>

@@ -3,9 +3,11 @@ import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
 import Footer from "./Containers/Footer";
 
-import "./Style.css";
 import { Route, Routes } from "react-router";
 import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Contact from "./Pages/Contact/Contact";
+import Portfolio from "./Pages/Portfolio/Portfolio";
 export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false); // Correct state declaration
 
@@ -36,6 +38,9 @@ export default function App() {
         />
         <Routes>
           <Route index element={<Home />} />
+          <Route path="/About" element={<About/>}/>
+          <Route path="/Contact" element={<Contact/>}/>
+          <Route path="/Portfolio" element={<Portfolio/>}/>
         </Routes>
 
         <Footer />
