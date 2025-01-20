@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'arrow-shadow': 'inset 4px 4px 17.4px 0px rgba(255, 255, 255, 0.28)',
+      },
       fontFamily: {
         Manrope: ['"Manrope"', "serif"],
         Inter: ['"Inter"', "serif"],

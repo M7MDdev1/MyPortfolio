@@ -1,10 +1,11 @@
 import { useState } from "react";
 import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
-import Home from "./Containers/Home";
 import Footer from "./Containers/Footer";
 
 import "./Style.css";
+import { Route, Routes } from "react-router";
+import Home from "./Pages/Home/home";
 export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false); // Correct state declaration
 
@@ -39,7 +40,10 @@ export default function App() {
           visibility={navMenuVisibility}
           setNavMenuVisibility={setNavMenuVisibility}
         />
-        <Home />
+        <Routes>
+          <Route index element={<Home />} />
+        </Routes>
+
         <Footer />
       </div>
     </>

@@ -5,7 +5,7 @@ export default function NavBar({ visibility, setVisibility }) {
   return (
     <div
       className={
-        "sm:hidden mx-auto py-5 border-b border-x border-dark12 px-4"
+        "sm:hidden mx-auto bg-[#1C1828] py-5 border-b border-x border-dark12 px-4"
       }
     >
       <div className="flex justify-between items-center pt-10">
