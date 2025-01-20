@@ -5,7 +5,7 @@ import Footer from "./Containers/Footer";
 
 import "./Style.css";
 import { Route, Routes } from "react-router";
-import Home from "./Pages/Home/home";
+import Home from "./Pages/Home/Home";
 export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false); // Correct state declaration
 
@@ -22,7 +22,9 @@ export default function App() {
       </div>
 
       <div
-        className={"font-shantell min-h-screen text-[#E4E4E6] sm:hidden block"}
+        className={
+          "font-shantell min-h-screen text-[#E4E4E6] bg-HomeColor sm:hidden block"
+        }
       >
         <NavBar
           visibility={navMenuVisibility}
