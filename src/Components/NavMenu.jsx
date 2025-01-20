@@ -8,7 +8,7 @@ export default function NavMenu({ visibility, setNavMenuVisibility }) {
   };
   return (
     <div
-      className={`flex absolute top-10 flex-col items-center justify-center px-12 py-[2.70rem] mx-8 bg-[#1D192B] rounded-[1.25rem] ${
+      className={`flex absolute top-10 flex-col items-center justify-center px-12 py-[2.70rem] mx-8 bg-[#1D192B] left-0 right-0 rounded-[1.25rem] ${
         !visibility && "hidden"
       }`}
     >
