@@ -22,15 +22,7 @@ export default function App() {
       </div>
 
       <div
-        id="main"
         className={"font-shantell min-h-screen text-[#E4E4E6] sm:hidden block"}
-        style={{
-          backgroundImage:
-            "var(--, linear-gradient(0deg, rgba(22, 21, 19, 0.78) 0%, rgba(22, 21, 19, 0.78) 100%), conic-gradient(from 168deg at 50% 33.01%, rgba(93, 48, 190, 0.43) 126deg, rgba(31, 19, 165, 0.48) 310deg))",
-          height: "100vh", // Example height
-          width: "100%", // Example width
-          backgroundSize: "cover", // Optional for full coverage
-        }}
       >
         <NavBar
           visibility={navMenuVisibility}
