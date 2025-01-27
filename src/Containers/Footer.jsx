@@ -32,7 +32,7 @@ export default function Footer() {
         <p className="text-[#797C86] font-Manrope text-xs text-center mb-4">
           © 2024 Mohammed Mohjary Dev. All rights reserved.
         </p>
-        <SocialMedia />
+        <SocialMedia isCenter={true}/>
       </div>
     </>
   );
