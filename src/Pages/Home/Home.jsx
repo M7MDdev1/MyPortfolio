@@ -1,5 +1,6 @@
 import About from "./Container/About";
 import Head from "./Container/Head";
+import Portfolio from "./Container/Portfolio";
 import Skills from "./Container/Skills";
 
 export default function Home() {
@@ -8,6 +9,7 @@ export default function Home() {
       <Head/>
       <Skills/>
       <About/>
+      <Portfolio/>
     </div>
   );
 }
