@@ -8,11 +8,11 @@ export default function About() {
         ABOUT
       </p>
       <h3 className="text-[1.75rem] font-semibold">THIS IS MOHAMMED</h3>
-      <button className="px-5 py-[0.88rem] bg-[#1C1C21] border border-[#2F2F37] rounded-lg text-[0.875rem]">
+      <button className="px-5 py-[0.88rem] mb-[3.75rem] bg-[#1C1C21] border border-[#2F2F37] rounded-lg text-[0.875rem]">
         <Link to={"/Contact"}>Know More <GoArrowRight className="inline"/></Link>
       </button>
 
-      <p>صورتي</p>
+      <img src="Image\Me.png" alt="Me" />
       
     </div>
   );
