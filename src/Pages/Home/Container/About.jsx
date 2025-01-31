@@ -56,7 +56,7 @@ export default function About() {
         </Link>
 
         <a
-          href={"Mohammad Mahjari - SWE - Resume.pdf"}
+          href={"cv.pdf"}
           className="block text-center px-6 py-[0.88rem] w-full text-white bg-[#1C1C21] border border-[#2F2F37] rounded-lg text-[0.875rem]"
         >
           Download CV

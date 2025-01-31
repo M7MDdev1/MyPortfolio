@@ -38,9 +38,9 @@ export default function App() {
         />
         <Routes>
           <Route index element={<Home />} />
-          <Route path="/About" element={<About/>}/>
-          <Route path="/Contact" element={<Contact/>}/>
-          <Route path="/Portfolio" element={<Portfolio/>}/>
+          <Route path="/About" element={<About />} />
+          <Route path="/Contact" element={<Contact />} />
+          <Route path="/Portfolio" element={<Portfolio />} />
         </Routes>
 
         <Footer />
