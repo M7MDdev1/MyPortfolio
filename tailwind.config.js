@@ -12,6 +12,7 @@ export default {
       fontFamily: {
         Manrope: ['"Manrope"', "serif"],
         Inter: ['"Inter"', "serif"],
+        Poppins: ['"Poppins"', "serif"],
       },
       colors: {
         dark12: 'var(--Dark-12, #1C1C21)',

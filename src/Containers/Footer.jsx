@@ -1,39 +1,33 @@
-import { Link } from "react-router";
 import SocialMedia from "../Components/SocialMedia";
 
 export default function Footer() {
   return (
-    <>
-      <div className="py-10 px-5 grid grid-cols-2 font-Manrope text-xs">
-        <div className="col-span-2">
-          <p className="text-[#797C86] mb-4">Home</p>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>My projects</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-        </div>
-        
-        <div>
-          <p className="text-[#797C86] mb-4">Home</p>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>My projects</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-        </div>
-        
-        <div>
-          <p className="text-[#797C86] mb-4">Home</p>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>My projects</Link>
-          <Link className="block py-[0.375rem] border-b border-[#2F2F37] w-fit" to={""}>ABOUT ME</Link>
-        </div>
-        
-      </div>
+    <div
+      className={`pt-16 pb-10 px-5 font-Poppins 
+    bg-[linear-gradient(180deg,#000_1.26%,rgba(0,0,0,0.00)100%),radial-gradient(58.09%_74.45%_at_26.15%31.82%,rgba(82,1,227,0.53)0%,rgba(0,0,0,0.50)62.83%)]
+    flex flex-col items-center justify-center`}
+    >
+      <img
+        src="W_Logo.png"
+        alt="Logo"
+        className={"h-14 pl-9 mb-10 self-start"}
+      />
 
-      <div className="py-5 px-4">
-        <p className="text-[#797C86] font-Manrope text-xs text-center mb-4">
-          © 2024 Mohammed Mohjary Dev. All rights reserved.
+      <h3 className="text-white text-[0.9375rem] mb-5">
+        "Building the future, one line of code at a time."
+      </h3>
+      <p className="text-xs mx-[3.70rem] font-light leading-[1.375rem] text-center">
+        We’re a diverse and passionate team that takes ownership of your design
+        and empower you to execute the roadmap. We stay light on our feet and
+        truly enjoy delivering great work.
+      </p>
+      <div className="py-5 px-4 relative">
+        <SocialMedia isCenter={true} />
+        <img src="Languages.png" alt="Languages" className="-translate-y-48 absolute" />
+        <p className="leading-[0.875rem] text-[0.8125rem] text-center mt-10">
+          © 2024 Mohammed Mahjari. All rights reserved.
         </p>
-        <SocialMedia isCenter={true}/>
       </div>
-    </>
+    </div>
   );
 }

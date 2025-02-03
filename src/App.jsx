@@ -25,7 +25,7 @@ export default function App() {
 
       <div
         className={
-          "font-shantell min-h-screen text-[#E4E4E6] bg-HomeColor sm:hidden block"
+          "font-shantell min-h-screen text-[#E4E4E6] sm:hidden block bg-[#121212] pt-6"
         }
       >
         <NavBar
