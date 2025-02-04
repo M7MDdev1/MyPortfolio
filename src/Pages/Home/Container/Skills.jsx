@@ -3,7 +3,7 @@ import Skill from "../Components/Skill";
 
 export default function Skills() {
   return (
-    <div className="font-Poppins relative mb-8">
+    <div className="font-Poppins relative mb-8" id="skills">
       <div className="flex gap-x-3 my-8 items-center justify-center">
         <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD] text-[#161513] font-semibold bg-white">Get in touch</button>
         <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD]  font-semibold bg-transparent">Download CV</button>

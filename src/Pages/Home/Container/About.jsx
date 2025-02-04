@@ -3,7 +3,7 @@ import ScoreCard from "../Components/Score-card";
 
 export default function About() {
   return (
-    <div className="font-Poppins mb-8 relative">
+    <div className="font-Poppins mb-8 relative" id="about">
       <SubTitle>About me</SubTitle>
       <h3 className="text-4xl font-semibold mb-10">
         I am{" "}
