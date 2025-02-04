@@ -1,13 +1,17 @@
 import About from "./Container/About";
-import Portfolio from "./Container/Portfolio";
+import Experties from "./Container/Experties";
+import Projects from "./Container/Projects";
 import Skills from "./Container/Skills";
+import Volunteer from "./Container/Volunteer";
 
 export default function Home() {
   return (
-    <div>
+    <div className="px-4">
       <About/>
       <Skills/>
-      <Portfolio/>
+      <Experties/>
+      <Projects/>
+      <Volunteer/>
     </div>
   );
 }

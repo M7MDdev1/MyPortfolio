@@ -1,15 +1,15 @@
+import SubTitle from "../../../Components/SubTitle";
 import Skill from "../Components/Skill";
 
 export default function Skills() {
   return (
-    <div className="font-Poppins mx-4 relative">
-      <img src="Languages.png" alt="Languages" className="-translate-y-32 absolute" />
+    <div className="font-Poppins relative mb-8">
       <div className="flex gap-x-3 my-8 items-center justify-center">
         <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD] text-[#161513] font-semibold bg-white">Get in touch</button>
         <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD]  font-semibold bg-transparent">Download CV</button>
       </div>
 
-      <h4 className="text-2xl font-semibold p-6 mb-3">Skills</h4>
+      <SubTitle>Skills</SubTitle>
     <div className="grid grid-cols-3 gap-y-4 py-3 px-6 items-center mb-7">
       <Skill name={"JavaScript"} img={"Skills/js.svg"} />
       <Skill name={"TypeScript"} img={"Skills/ts.svg"} />
