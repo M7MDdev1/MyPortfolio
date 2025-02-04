@@ -4,6 +4,11 @@ export default {
     "./src/**/*.{html,js,jsx,ts,tsx}", // Adjust this path according to your project structure
     "./index.html", // If you have an index.html in the public directory
   ],
+  safelist: [
+    {
+      pattern: /bg-\[.*?\]/, // Keep all arbitrary background classes
+    },
+  ],
   theme: {
     extend: {
       boxShadow: {

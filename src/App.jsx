@@ -15,7 +15,7 @@ export default function App() {
     <>
       <div
         dir="rtl"
-        className="bg-[linear-gradient(0deg,var(--1,rgba(22,21,19,0.78))0%,var(--1,rgba(22,21,19,0.78))100%),conic-gradient(from_168deg_at_50%_33.01%,rgba(93,48,190,0.43)125.99999785423279deg,rgba(31,19,165,0.48)309.6000051498413deg)] text-white font-bold min-h-screen justify-center items-center flex-col hidden sm:flex"
+        className="bg-loading-gradient text-white font-bold min-h-screen justify-center items-center flex-col hidden sm:flex"
       >
         <h1 className="sm:text-8xl text-5xl mb-12">
           تحت الانشاء ! <span className="sm:text-9xl text-6xl">🚧</span>
