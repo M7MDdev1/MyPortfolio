@@ -1,5 +1,5 @@
-import SubTitle from "../../../Components/SubTitle";
-import ScoreCard from "../Components/Score-card";
+import SubTitle from "../Components/SubTitle";
+import ScoreCard from "../Components/Score-card.jsx";
 
 export default function About() {
   return (

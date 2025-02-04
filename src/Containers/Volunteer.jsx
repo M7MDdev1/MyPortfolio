@@ -1,4 +1,4 @@
-import SubTitle from "../../../Components/SubTitle";
+import SubTitle from "../Components/SubTitle";
 import VolanteerCard from "../Components/Volanteer-Card";
 
 export default function Volunteer() {

@@ -2,12 +2,11 @@ import { useState } from "react";
 import NavBar from "./Components/NavBar";
 import NavMenu from "./Components/NavMenu";
 import Footer from "./Containers/Footer";
-
-import { Route, Routes } from "react-router";
-import Home from "./Pages/Home/Home";
-import About from "./Pages/About/About";
-import Contact from "./Pages/Contact/Contact";
-import Portfolio from "./Pages/Portfolio/Portfolio";
+import About from "./Containers/About";
+import Skills from "./Containers/Skills";
+import Experties from "./Containers/Experties";
+import Projects from "./Containers/Projects";
+import Volunteer from "./Containers/Volunteer";
 export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false); // Correct state declaration
 
@@ -22,13 +21,16 @@ export default function App() {
         </h1>
         <p className=" inline-block bg-gradient-to-r from-white to-[#8C90FF] bg-clip-text text-transparent text-8xl leading-relaxed text-center">
           افتح الموقع من الجوال
-          <br/>
-           لتجربة افضل!
-           
+          <br />
+          لتجربة افضل!
         </p>
 
-
-        <a href="https://linktr.ee/m7md_dev" className="px-6 py-3 bg-green-600 rounded-2xl text-4xl mt-12">LinkTree</a>
+        <a
+          href="https://linktr.ee/m7md_dev"
+          className="px-6 py-3 bg-green-600 rounded-2xl text-4xl mt-12"
+        >
+          LinkTree
+        </a>
       </div>
       <div
         className={
@@ -43,13 +45,13 @@ export default function App() {
           visibility={navMenuVisibility}
           setNavMenuVisibility={setNavMenuVisibility}
         />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/About" element={<About />} />
-          <Route path="/Contact" element={<Contact />} />
-          <Route path="/Portfolio" element={<Portfolio />} />
-        </Routes>
-
+        <div className="px-4">
+          <About />
+          <Skills />
+          <Experties />
+          <Projects />
+          <Volunteer />
+        </div>
         <Footer />
       </div>
     </>

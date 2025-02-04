@@ -1,7 +1,6 @@
-import { Link } from "react-router";
 import { GoArrowRight } from "react-icons/go";
 import Carousel from "../Components/Carousel";
-import SubTitle from "../../../Components/SubTitle";
+import SubTitle from "../Components/SubTitle";
 
 export default function Projects() {
   return (

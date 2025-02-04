@@ -1,4 +1,4 @@
-import SubTitle from "../../../Components/SubTitle";
+import SubTitle from "../Components/SubTitle";
 import Experity from "../Components/Experity";
 
 export default function Experties() {
