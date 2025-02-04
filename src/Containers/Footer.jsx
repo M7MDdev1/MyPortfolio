@@ -3,8 +3,7 @@ import SocialMedia from "../Components/SocialMedia";
 export default function Footer() {
   return (
     <div
-      className={`pt-16 pb-10 px-5 font-Poppins 
-    bg-[linear-gradient(180deg,#000_1.26%,rgba(0,0,0,0.00)100%),radial-gradient(58.09%_74.45%_at_26.15%31.82%,rgba(82,1,227,0.53)0%,rgba(0,0,0,0.50)62.83%)]
+      className={`pt-16 pb-10 px-5 font-Poppins bg-Footer-gradient
     flex flex-col items-center justify-center`}
     >
       <img
@@ -23,7 +22,11 @@ export default function Footer() {
       </p>
       <div className="py-5 px-4 relative">
         <SocialMedia isCenter={true} />
-        <img src="Languages.png" alt="Languages" className="-translate-y-48 absolute" />
+        <img
+          src="Languages.png"
+          alt="Languages"
+          className="-translate-y-48 absolute"
+        />
         <p className="leading-[0.875rem] text-[0.8125rem] text-center mt-10">
           © 2024 Mohammed Mahjari. All rights reserved.
         </p>
