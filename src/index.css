@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer utilities {
   .bg-Footer-gradient {
     background-image: linear-gradient(180deg, #000 1.26%, rgba(0, 0, 0, 0) 100%),
@@ -26,6 +25,20 @@
         rgba(93, 48, 190, 0.43) 126deg,
         rgba(31, 19, 165, 0.48) 310deg
       );
+  }
+}
+
+@layer utilities {
+  .navbar-gradient {
+    background: linear-gradient(180deg, #000 1.26%, rgba(0, 0, 0, 0) 100%),
+      linear-gradient(to bottom right, #5201e3 16%, #000 50%) bottom right / 50%
+        50% no-repeat,
+      linear-gradient(to bottom left, #5201e3 16%, #000 50%) bottom left / 50%
+        50% no-repeat,
+      linear-gradient(to top left, #5201e3 16%, #000 50%) top left / 50% 50%
+        no-repeat,
+      linear-gradient(to top right, #5201e3 16%, #000 50%) top right / 50% 50%
+        no-repeat;
   }
 }
 

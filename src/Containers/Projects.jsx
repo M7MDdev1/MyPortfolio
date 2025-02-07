@@ -5,7 +5,7 @@ import SubTitle from "../Components/SubTitle";
 export default function Projects() {
   return (
     <div className="gap-y-10 font-Poppins mb-8" id="projects">
-      <SubTitle className="mb-4">Project</SubTitle>
+      <SubTitle className="mb-4 md:text-center">Project</SubTitle>
       <p className="font-medium mb-7">Discover my coding world.</p>
       <Carousel />
       <a

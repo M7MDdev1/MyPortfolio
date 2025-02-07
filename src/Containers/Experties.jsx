@@ -3,14 +3,14 @@ import Experity from "../Components/Experity";
 
 export default function Experties() {
   return (
-    <div className="flex flex-col gap-y-4" id="experties">
-      <SubTitle>Experties</SubTitle>
+    <div className="flex flex-col gap-y-4 items-center" id="experties">
+      <SubTitle className="sm:text-center ">Experties</SubTitle>
 
       <Experity
         img={"Experities/TheGarage.png"}
         Company={"The Garage"}
         discription={`
-am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.          `}
+am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.`}
         date={"March 2024 - March 2024"}
         Title={"Front-end"}
         Type={"Trainee"}
@@ -20,7 +20,7 @@ am Mohammed Mehjari, a professional web and app developer with over 15 years of 
         img={"Experities/TheGarage.png"}
         Company={"The Garage"}
         discription={`
-am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.          `}
+am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.`}
         date={"March 2024 - March 2024"}
         Title={"Front-end"}
         Type={"Trainee"}
@@ -30,7 +30,7 @@ am Mohammed Mehjari, a professional web and app developer with over 15 years of 
         img={"Experities/TheGarage.png"}
         Company={"The Garage"}
         discription={`
-am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.          `}
+am Mohammed Mehjari, a professional web and app developer with over 15 years of experience.`}
         date={"March 2024 - March 2024"}
         Title={"Front-end"}
         Type={"Trainee"}

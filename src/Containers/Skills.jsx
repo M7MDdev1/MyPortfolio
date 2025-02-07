@@ -4,7 +4,7 @@ import Skill from "../Components/Skill";
 export default function Skills() {
   return (
     <div className="font-Poppins relative mb-8" id="skills">
-      <div className="flex gap-x-3 my-8 items-center justify-center">
+      <div className="flex gap-x-3 my-8 items-center justify-center md:hidden">
         <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD] text-[#161513] font-semibold bg-white">
           Get in touch
         </button>
@@ -13,8 +13,13 @@ export default function Skills() {
         </button>
       </div>
 
-      <SubTitle>Skills</SubTitle>
-      <div className="grid grid-cols-3 gap-y-4 py-3 px-6 items-center mb-7">
+      <img
+        src="D_Languages.png"
+        alt="D_Languages"
+        className="hidden md:block absolute translate-y-40"
+      />
+      <SubTitle className="md:text-center md:mb-7">Skills</SubTitle>
+      <div className="grid grid-cols-3 gap-y-4  py-3 px-6 items-center mb-7">
         <Skill name={"JavaScript"} img={"Skills/js.svg"} />
         <Skill name={"TypeScript"} img={"Skills/ts.svg"} />
         <Skill name={"React"} img={"Skills/react.svg"} />

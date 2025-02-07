@@ -31,20 +31,31 @@ export default function Carousel() {
   }, [index]);
 
   return (
-    <div className={"relative pb-28"}>
+    <>
+      {/* Mobile */}
+      <div className={"relative pb-28 md:hidden"}>
+        <div
+          className={"overflow-hidden flex items-center rounded-2xl "}
+        >
+          <CarouselControls
+            setIndex={setIndex}
+            handleBackButton={handleBackButton}
+            handleNextButton={handleNextButton}
+            Image={Images}
+            index={index}
+          />
+          {Images.map((Img, i) => {
+            return <CarouselCard key={i} Img={Img} index={index} />;
+          })}
+        </div>
+      </div>
 
-    <div className={"overflow-hidden h-[400px] flex items-center rounded-2xl"}>
-      <CarouselControls
-        setIndex={setIndex}
-        handleBackButton={handleBackButton}
-        handleNextButton={handleNextButton}
-        Image={Images}
-        index={index}
-      />
-      {Images.map((Img, i) => {
-        return <CarouselCard key={i} Img={Img} index={index} />;
-      })}
-    </div>
-    </div>
+      {/* Desktop */}
+      <div className="hidden md:grid grid-cols-2 items-center ">
+        {Images.map((Img, i) => {
+          return <CarouselCard key={i} Img={Img} index={0} />;
+        })}
+      </div>
+    </>
   );
 }
