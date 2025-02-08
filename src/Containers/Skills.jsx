@@ -1,17 +1,11 @@
 import SubTitle from "../Components/SubTitle";
 import Skill from "../Components/Skill";
+import Infos from "../Components/Infos";
 
 export default function Skills() {
   return (
     <div className="font-Poppins relative mb-8" id="skills">
-      <div className="flex gap-x-3 my-8 items-center justify-center">
-        <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD] text-[#161513] font-semibold bg-white">
-          Get in touch
-        </button>
-        <button className="w-[8.768rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD]  font-semibold bg-transparent">
-          Download CV
-        </button>
-      </div>
+      <Infos />
 
       <SubTitle>Skills</SubTitle>
       <div className="grid grid-cols-3 gap-y-4 py-3 px-6 items-center mb-7">

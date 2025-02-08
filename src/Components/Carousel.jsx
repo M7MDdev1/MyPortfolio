@@ -4,9 +4,21 @@ import CarouselCard from "./Carousel-Card";
 import CarouselControls from "./Carousel-Controls";
 export default function Carousel() {
   const Images = [
-    "Portfolio/Blog.png",
-    "Portfolio/Nasser.png",
-    "Portfolio/Todo.png",
+    {
+      Img: "Portfolio/Blog.png",
+      title: "BlogAPI",
+      link: "https://github.com/M7MDdev1/Blog-API",
+    },
+    {
+      Img: "Portfolio/Nasser.png",
+      title: "Nasser's Portfolio",
+      link: "https://nasixr.vercel.app/",
+    },
+    {
+      Img: "Portfolio/Todo.png",
+      title: "Munjez - مُنجِز",
+      link: "https://github.com/M7MDdev1/Munjez",
+    },
   ];
   const [index, setIndex] = useState(0);
 
@@ -28,12 +40,10 @@ export default function Carousel() {
     }, 1600);
 
     return () => clearInterval(interval); // Clean up the interval on unmount
-  }, [index]);
+  }, []);
 
   return (
-    <div className={"relative pb-28"}>
-
-    <div className={"overflow-hidden h-[400px] flex items-center rounded-2xl"}>
+    <div className={"relative pb-28 flex justify-center"}>
       <CarouselControls
         setIndex={setIndex}
         handleBackButton={handleBackButton}
@@ -41,10 +51,21 @@ export default function Carousel() {
         Image={Images}
         index={index}
       />
-      {Images.map((Img, i) => {
-        return <CarouselCard key={i} Img={Img} index={index} />;
-      })}
-    </div>
+      <div
+        className={"overflow-hidden w-[400px] flex items-center rounded-2xl"}
+      >
+        {Images.map((item, i) => {
+          return (
+            <CarouselCard
+              key={i}
+              Img={item.Img}
+              index={index}
+              Title={item.title}
+              Link={item.link}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }

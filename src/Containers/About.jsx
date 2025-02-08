@@ -15,12 +15,11 @@ export default function About() {
       <img src="Image\Me.png" alt="Me" className="w-full mx-auto block" />
 
       <div className="p-6 mb-10">
-        <h3 className="mb-3 font-semibold text-2xl">Introduction</h3>
+        <h3 className="mb-3 font-semibold text-2xl">Who am I ?</h3>
         <p className="text-[0.875rem] leading-[1.3125rem] tracking-[0.04375rem]">
-          Front-End Web Developer proficient in React, TypeScript, and Tailwind
-          CSS. Currently expanding skills in PHP and to transition into
-          Full-Stack Development. Committed to building scalable and efficient
-          web applications.
+          Full-Stack Web Developer proficient in React, TypeScript, and
+          TailwindCSS, with a growing expertise in PHP Laravel. Passionate about
+          building scalable, efficient, and user-friendly web applications
         </p>
       </div>
       <img
@@ -29,14 +28,14 @@ export default function About() {
         className="translate-y-8 absolute"
       />
 
-      <div className="grid grid-cols-2 gap-3 mb-8">
+      {/* <div className="grid grid-cols-2 gap-3 mb-8">
         <ScoreCard number={3} className="col-span-2">
           Years in web development
         </ScoreCard>
         <ScoreCard number={10}>Project</ScoreCard>
         <ScoreCard number={5}>Volunteered</ScoreCard>
-      </div>
-      <div className="px-6 h-[27.6875rem]">
+      </div> */}
+      {/* <div className="px-6 h-[27.6875rem]">
         <h3 className="text-2xl font-semibold mb-5">My Bio</h3>
         <p>
           I am Mohammed Mahjari, a professional web and app developer with over
@@ -49,7 +48,7 @@ export default function About() {
           create solutions that enhance lives and empower businesses in the
           digital world.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }

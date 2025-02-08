@@ -1,5 +1,6 @@
 import { IoIosCloseCircleOutline } from "react-icons/io";
 import { Link } from "react-router"; // Fixed import
+import Infos from "./Infos";
 
 export default function NavMenu({ visibility, setNavMenuVisibility }) {
   const handleVisibility = () => {
@@ -46,14 +47,7 @@ export default function NavMenu({ visibility, setNavMenuVisibility }) {
           </button>
         </div>
       </div>
-      <div className="flex flex-col gap-y-8  items-center justify-center">
-        <button className="w-[12.125rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD] text-[#161513] font-semibold bg-white">
-          Get in touch
-        </button>
-        <button className="w-[12.125rem] h-[2.87769rem] rounded-[2.24819rem] border border-[#6D3AFD]  font-semibold bg-transparent">
-          Download CV
-        </button>
-      </div>
+<Infos/>
     </div>
   );
 }
