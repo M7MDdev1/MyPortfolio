@@ -10,12 +10,5 @@
     <priority>1.0</priority>
   </url>
 
-  <!-- ملف السيرة الذاتية -->
-  <url>
-    <loc>https://m7md.co/cv.pdf</loc>
-    <lastmod>2025-06-06</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
 
 </urlset>
