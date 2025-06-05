@@ -4,7 +4,7 @@ import VolanteerCard from "../Components/Volanteer-Card";
 export default function Volunteer() {
   return (
     <div className="flex flex-col gap-y-4 mb-14" id="volunteer">
-      <SubTitle>Experties</SubTitle>
+      <SubTitle>Volunteer</SubTitle>
       <VolanteerCard
         img={"Volanteer/GDSC.jpg"}
         Company={"GDSC - JU"}

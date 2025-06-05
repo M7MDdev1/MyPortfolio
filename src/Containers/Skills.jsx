@@ -8,7 +8,7 @@ export default function Skills() {
       <Infos />
 
       <SubTitle>Skills</SubTitle>
-      <div className="grid grid-cols-3 gap-y-4 py-3 px-6 items-center mb-7">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 py-3 px-6 items-center mb-7">
         <Skill name={"JavaScript"} img={"Skills/js.svg"} />
         <Skill name={"TypeScript"} img={"Skills/ts.svg"} />
         <Skill name={"React"} img={"Skills/react.svg"} />

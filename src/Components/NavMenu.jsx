@@ -9,7 +9,7 @@ export default function NavMenu({ visibility, setNavMenuVisibility }) {
 
   return (
     <div
-      className={`absolute top-10 left-0 right-0 z-10 flex flex-col items-center justify-center px-12 py-[2.70rem] mx-8 bg-[linear-gradient(180deg,_#000_1.26%,rgba(0,0,0,0.61)100%),radial-gradient(58.09%_74.45%_at_26.15%_31.82%,rgba(82,1,227,0.82)0%,#000_62.83%)] rounded-[1.25rem] transition-all duration-300 ease-in-out ${
+      className={`absolute sm:hidden top-10 left-0 right-0 z-10 flex flex-col items-center justify-center px-12 py-[2.70rem] mx-8 bg-[linear-gradient(180deg,_#000_1.26%,rgba(0,0,0,0.61)100%),radial-gradient(58.09%_74.45%_at_26.15%_31.82%,rgba(82,1,227,0.82)0%,#000_62.83%)] rounded-[1.25rem] transition-all duration-300 ease-in-out ${
         visibility
           ? "opacity-100 translate-y-0 scale-100"
           : "opacity-0 translate-y-[-20px] scale-95 pointer-events-none"

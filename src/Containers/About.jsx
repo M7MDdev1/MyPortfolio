@@ -12,7 +12,7 @@ export default function About() {
         </span>
       </h3>
 
-      <img src="Image\Me.png" alt="Me" className="w-full mx-auto block" />
+      <img src="Image/Me.png" alt="Me" className="w-full max-w-[400px] mx-auto block rounded-xl" />
 
       <div className="p-6 mb-10">
         <h3 className="mb-3 font-semibold text-2xl">Who am I ?</h3>

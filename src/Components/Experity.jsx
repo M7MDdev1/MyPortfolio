@@ -7,10 +7,11 @@ export default function Experity({
   Type,
 }) {
   return (
-    <div
-      className={`p-3 flex items-center justify-center gap-x-3 h-[11.1875rem] w-[22.375rem] rounded-[0.62169rem] font-Poppins
-    bg-[linear-gradient(110deg,#000_19.95%,#0E0717_67.64%,#14004D_107.08%,#000_156.61%,#000_183.21%)]`}
-    >
+<div
+  className="p-4 flex flex-col sm:flex-row items-center justify-start gap-4 w-full max-w-[850px] rounded-xl mx-auto font-Poppins
+  bg-[linear-gradient(110deg,#000_19.95%,#0E0717_67.64%,#14004D_107.08%,#000_156.61%,#000_183.21%)]"
+>
+
       <div className="w-[40%] flex items-center justify-center">
         <img src={img} alt={Company} className="h-[5.5rem] object-contain" />
       </div>

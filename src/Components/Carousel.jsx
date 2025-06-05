@@ -51,9 +51,8 @@ export default function Carousel() {
         Image={Images}
         index={index}
       />
-      <div
-        className={"overflow-hidden w-[400px] flex items-center rounded-2xl"}
-      >
+<div className="overflow-hidden w-[90%] sm:w-[400px] md:w-[600px] lg:w-[800px] flex items-center rounded-2xl">
+
         {Images.map((item, i) => {
           return (
             <CarouselCard

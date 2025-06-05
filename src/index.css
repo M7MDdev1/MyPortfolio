@@ -29,6 +29,13 @@
   }
 }
 
+html,
+body,
+#root {
+  @apply bg-[#121212] text-white;
+}
+
+
 /* Manrope */
 @font-face {
   font-family: "Manrope";

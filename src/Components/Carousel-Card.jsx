@@ -2,15 +2,13 @@ import { ImArrowUpRight2 } from "react-icons/im";
 
 export default function CarouselCard({ Img, index, Title, Link }) {
   return (
-    <div className="shrink-0 grow-0 rounded-2xl duration-300 transition-all"
-    style={{ transform: `translateX(${`-${index * 100}%`})` }}
-
+    <div
+      className="shrink-0 grow-0 rounded-2xl duration-300 transition-all"
+      style={{ transform: `translateX(${`-${index * 100}%`})` }}
     >
       <img
         src={Img}
-        className={
-          "  h-[400px]   object-cover select-none p-4"
-        }
+        className={"  h-[400px]   object-cover select-none p-4"}
         alt="carousel image"
       />
       <div className=" pb-12 px-6 flex justify-between">
