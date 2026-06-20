@@ -1,3 +1,5 @@
+"use client";
+
 import CountUp from "react-countup";
 import { FiGithub, FiLinkedin, FiMail, FiDownload } from "react-icons/fi";
 import XpWindow from "../Components/XpWindow";

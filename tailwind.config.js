@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
-    "./src/**/*.{html,js,jsx,ts,tsx}", // Adjust this path according to your project structure
-    "./index.html", // If you have an index.html in the public directory
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   safelist: [
     {
