@@ -1,4 +1,4 @@
-import SubTitle from "../Components/SubTitle";
+import XpWindow from "../Components/XpWindow";
 
 const experiences = [
   {
@@ -10,13 +10,13 @@ const experiences = [
     location: "Saudi Arabia",
     stack: ["Microservices", "SMTP", "Next.js", "Google Forms API"],
     points: [
-      "Architected microservices system with dedicated SMTP mail-sending service and separate dashboard service",
-      "Built client management dashboard ingesting leads from Google Forms with one-click campaign triggering",
-      "Engineered automated email pipeline reaching 12,000+ employers across Saudi Arabia",
+      "Architected microservices system with dedicated SMTP mail-sending and dashboard services",
+      "Built client dashboard ingesting Google Forms leads with one-click campaign triggering",
+      "Engineered automated pipeline reaching 12,000+ employers across Saudi Arabia",
     ],
-    badge: "Co-Founder",
-    badgeColor: "from-[#6D3AFD] to-[#A855F7]",
-    dotColor: "bg-[#6D3AFD]",
+    badge: "CO-FOUNDER",
+    badgeColor: "bg-[#FFD200] text-black",
+    icon: "🏢",
   },
   {
     company: "Ebra.ai",
@@ -25,15 +25,15 @@ const experiences = [
     type: "Internship",
     period: "Jan 2026 – Apr 2026",
     location: "Remote",
-    stack: ["Microservices", "Laravel", "Fintech"],
+    stack: ["Microservices", "Laravel", "Fintech", "Enterprise"],
     points: [
-      "Production-grade exposure to microservices on a large-scale debt collection platform (Zain, SDB, ACIG)",
-      "Resolved critical bugs across distributed services, improving stability for high-value financial clients",
+      "Production-grade exposure to microservices on large-scale debt collection (Zain, SDB, ACIG)",
+      "Resolved critical bugs across distributed services for high-value financial clients",
       "Implemented secure coding practices to safeguard sensitive financial data",
     ],
-    badge: "Internship",
-    badgeColor: "from-[#FF4548] to-[#FF8C00]",
-    dotColor: "bg-[#FF4548]",
+    badge: "INTERNSHIP",
+    badgeColor: "bg-[#2060C8] text-white",
+    icon: "🤖",
   },
   {
     company: "King Abdulaziz City for Science and Technology (KACST)",
@@ -44,29 +44,29 @@ const experiences = [
     location: "Saudi Arabia",
     stack: ["Laravel", "React", "Inertia.js", "Flask", "AI Integration"],
     points: [
-      "Owned full-stack development of a health-tech platform with web and cross-platform mobile app",
-      "Integrated AI models from the KACST research team into production-ready products",
+      "Full-stack health-tech platform: web app + cross-platform mobile (Laravel, React, Flask)",
+      "Integrated KACST AI research models into production-ready products",
       "Contributed to R&D evaluating and prototyping emerging technologies",
     ],
-    badge: "Internship",
-    badgeColor: "from-[#00C9FF] to-[#00E5A0]",
-    dotColor: "bg-[#00C9FF]",
+    badge: "INTERNSHIP",
+    badgeColor: "bg-[#2060C8] text-white",
+    icon: "🔬",
   },
   {
     company: "Tuwaiq Academy",
     companyUrl: null,
-    role: "Instructor",
+    role: "Instructor — Python Programming",
     type: "Contract",
     period: "Aug 2025",
     location: "Al Qasim, Saudi Arabia",
     stack: ["Python", "Teaching", "Curriculum Design"],
     points: [
       "Instructed 2 batches of students at Qassim University in the 'Safik Thaki' program",
-      "Designed lesson plans emphasizing Python fundamentals, problem-solving, and creativity",
+      "Designed lesson plans emphasizing problem-solving, creativity, and Python fundamentals",
     ],
-    badge: "Contract",
-    badgeColor: "from-[#F7971E] to-[#FFD200]",
-    dotColor: "bg-[#F7971E]",
+    badge: "CONTRACT",
+    badgeColor: "bg-[#4A4A4A] text-[#C0C0C0]",
+    icon: "🎓",
   },
   {
     company: "The Garage",
@@ -79,11 +79,11 @@ const experiences = [
     points: [
       "Developed responsive UI components for 2 client projects",
       "Integrated REST APIs following the full product lifecycle from BA sessions to delivery",
-      "Strengthened team collaboration through structured Git/GitHub workflows in an agile environment",
+      "Strengthened team collaboration through Git/GitHub workflows in an agile environment",
     ],
-    badge: "Internship",
-    badgeColor: "from-[#667EEA] to-[#764BA2]",
-    dotColor: "bg-[#667EEA]",
+    badge: "INTERNSHIP",
+    badgeColor: "bg-[#2060C8] text-white",
+    icon: "🖥️",
   },
   {
     company: "Saeed Al-Namaa General Services",
@@ -95,41 +95,34 @@ const experiences = [
     stack: ["Web Development", "Team Management"],
     points: [
       "Onboarded and trained 3 new employees across all assigned responsibilities",
-      "Developed a user-friendly website providing comprehensive access to all company services",
+      "Developed a user-friendly website providing comprehensive access to company services",
     ],
-    badge: "Part-time",
-    badgeColor: "from-[#F093FB] to-[#F5576C]",
-    dotColor: "bg-[#F093FB]",
+    badge: "PART-TIME",
+    badgeColor: "bg-[#4A4A4A] text-[#C0C0C0]",
+    icon: "📊",
   },
 ];
 
 export default function Experties() {
   return (
-    <div className="font-Poppins mb-10" id="experties">
-      <SubTitle className="mb-8">Experience</SubTitle>
-
-      <div className="relative">
-        <div className="absolute left-[0.4rem] top-2 bottom-2 w-px bg-gradient-to-b from-[#6D3AFD] via-[#6D3AFD]/30 to-transparent" />
-
-        <div className="flex flex-col gap-6 pl-8">
+    <section id="experties" className="font-Poppins">
+      <XpWindow title="experience.log — Work History" icon="📋" titleRight={`${experiences.length} entries`}>
+        <div className="divide-y divide-[#333]">
           {experiences.map((exp, i) => (
-            <div key={i} className="relative group">
-              <div
-                className={`absolute -left-[1.65rem] top-5 w-3 h-3 rounded-full ${exp.dotColor} ring-2 ring-[#121212] group-hover:scale-125 transition-transform`}
-              />
-
-              <div className="p-5 rounded-xl border border-[#252530] bg-[#0E0E16] hover:border-[#6D3AFD]/40 transition-colors">
-                <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+            <div key={i} className="p-4 hover:bg-[#1E1E1E] transition-colors group">
+              <div className="flex flex-wrap items-start justify-between gap-2 mb-2">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-lg">{exp.icon}</span>
                   <div>
-                    <div className="flex flex-wrap items-center gap-2 mb-1">
-                      <h3 className="text-base font-semibold text-white">{exp.role}</h3>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <h3 className="text-sm font-semibold text-[#E8E8E8]">{exp.role}</h3>
                       <span
-                        className={`px-2 py-0.5 text-xs rounded-full bg-gradient-to-r ${exp.badgeColor} text-white font-medium`}
+                        className={`px-1.5 py-0.5 text-[0.6rem] font-mono font-bold rounded-[1px] ${exp.badgeColor}`}
                       >
                         {exp.badge}
                       </span>
                     </div>
-                    <p className="text-sm font-medium text-[#A084FF]">
+                    <p className="text-xs font-mono text-[#4488EE] mt-0.5">
                       {exp.companyUrl ? (
                         <a
                           href={exp.companyUrl}
@@ -144,36 +137,40 @@ export default function Experties() {
                       )}
                     </p>
                   </div>
-                  <div className="text-right text-xs text-[#555]">
-                    <p className="mb-0.5">{exp.period}</p>
-                    <p>{exp.location}</p>
-                  </div>
                 </div>
-
-                <ul className="space-y-1.5 mb-4">
-                  {exp.points.map((pt, j) => (
-                    <li key={j} className="text-sm text-[#A0A0A8] flex gap-2 leading-relaxed">
-                      <span className="text-[#6D3AFD] mt-0.5 shrink-0">▸</span>
-                      {pt}
-                    </li>
-                  ))}
-                </ul>
-
-                <div className="flex flex-wrap gap-1.5">
-                  {exp.stack.map((tech, k) => (
-                    <span
-                      key={k}
-                      className="px-2 py-0.5 text-xs rounded border border-[#252530] text-[#777] bg-[#0A0A12]"
-                    >
-                      {tech}
-                    </span>
-                  ))}
+                <div className="text-right font-mono text-[0.65rem] text-[#555]">
+                  <p>{exp.period}</p>
+                  <p>{exp.location}</p>
                 </div>
+              </div>
+
+              <ul className="space-y-1 mb-3 pl-7">
+                {exp.points.map((pt, j) => (
+                  <li key={j} className="text-xs text-[#909090] flex gap-2 leading-relaxed">
+                    <span className="text-[#4488EE] shrink-0 font-mono">&gt;</span>
+                    {pt}
+                  </li>
+                ))}
+              </ul>
+
+              <div className="flex flex-wrap gap-1.5 pl-7">
+                {exp.stack.map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-2 py-0.5 text-[0.6rem] font-mono rounded-[1px] border border-[#333] bg-[#1E1E1E] text-[#666] group-hover:border-[#444] group-hover:text-[#888] transition-colors"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
             </div>
           ))}
         </div>
-      </div>
-    </div>
+
+        <div className="px-3 py-1 bg-[#1E1E1E] border-t border-[#333] font-mono text-[0.6rem] text-[#555]">
+          {experiences.length} records &nbsp;|&nbsp; sorted by date descending
+        </div>
+      </XpWindow>
+    </section>
   );
 }

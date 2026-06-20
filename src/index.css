@@ -32,7 +32,41 @@
 html,
 body,
 #root {
-  @apply bg-[#121212] text-white;
+  background-color: #1A1A1A;
+  color: #D0D0D0;
+}
+
+/* XP-style scrollbar */
+::-webkit-scrollbar {
+  width: 14px;
+  height: 14px;
+}
+::-webkit-scrollbar-track {
+  background: #1A1A1A;
+  border-left: 1px solid #333;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #5A5A5A 0%, #3A3A3A 100%);
+  border: 1px solid #222;
+  border-top-color: #777;
+  border-left-color: #777;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #6A6A6A 0%, #4A4A4A 100%);
+}
+::-webkit-scrollbar-button {
+  background: linear-gradient(180deg, #4A4A4A 0%, #2A2A2A 100%);
+  border: 1px solid #222;
+  border-top-color: #666;
+  border-left-color: #666;
+  height: 14px;
+  width: 14px;
+}
+
+/* Selection */
+::selection {
+  background-color: #1C5CBF;
+  color: #ffffff;
 }
 
 

@@ -14,7 +14,7 @@ export default function App() {
   const [navMenuVisibility, setNavMenuVisibility] = useState(false);
 
   return (
-    <div className="font-Poppins min-h-screen text-[#E4E4E6] bg-[#121212] pt-6 px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40">
+    <div className="font-Poppins min-h-screen text-[#D0D0D0] bg-[#1A1A1A]">
       <Helmet>
         <title>Mohammed Mahjari – Full-Stack Engineer & Co-Founder</title>
         <meta
@@ -23,7 +23,7 @@ export default function App() {
         />
         <meta
           name="keywords"
-          content="Mohammed Mahjari, محمد مهجري, Full-Stack Engineer, Co-Founder, React, Next.js, Laravel, Flask, Saudi Arabia, مطور سعودي, Portfolio, Sehrah, KACST"
+          content="Mohammed Mahjari, محمد مهجري, Full-Stack Engineer, Co-Founder, React, Next.js, Laravel, Flask, Saudi Arabia, Portfolio, Sehrah, KACST"
         />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Mohammed Mahjari" />
@@ -46,13 +46,15 @@ export default function App() {
       <NavBar visibility={navMenuVisibility} setVisibility={setNavMenuVisibility} />
       <NavMenu visibility={navMenuVisibility} setNavMenuVisibility={setNavMenuVisibility} />
 
-      <div className="px-4">
-        <About />
-        <Experties />
-        <Projects />
-        <Skills />
-        <Certifications />
-        <Volunteer />
+      <div className="px-4 sm:px-8 md:px-12 lg:px-24 xl:px-40 pb-0">
+        <div className="flex flex-col gap-6 py-6">
+          <About />
+          <Experties />
+          <Projects />
+          <Skills />
+          <Certifications />
+          <Volunteer />
+        </div>
       </div>
 
       <Footer />

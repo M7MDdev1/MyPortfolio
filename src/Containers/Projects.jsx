@@ -1,69 +1,146 @@
-import { GoArrowRight } from "react-icons/go";
 import { FiExternalLink } from "react-icons/fi";
+import XpWindow from "../Components/XpWindow";
 import Carousel from "../Components/Carousel";
-import SubTitle from "../Components/SubTitle";
+
+const projects = [
+  {
+    name: "Bonian IDE",
+    desc: "Multimodal UML-to-code pipeline using Vision-Language Models as architectural ground truth, integrated into an AI-enhanced MDE framework. Reduces context decay over text-only models.",
+    tags: ["UML", "Vision-Language Models", "MDE", "AI", "Code Generation"],
+    link: "https://github.com/M7MDdev1",
+    badge: "🏆 RANKED #1 — GRADUATION PROJECT",
+    badgeColor: "bg-[#FFD200] text-black",
+    featured: true,
+  },
+  {
+    name: "Orchestrator",
+    desc: "Backend service managing outbound AI-driven phone calls — job queue with PostgreSQL, worker pool concurrency control, exponential backoff retries, and provider abstraction layer.",
+    tags: ["TypeScript", "Express.js", "PostgreSQL", "Jest", "Microservices"],
+    link: "https://github.com/M7MDdev1/orchestrator",
+    badge: "PRODUCTION",
+    badgeColor: "bg-[#2060C8] text-white",
+    featured: false,
+  },
+  {
+    name: "Anemia Detection",
+    desc: "Machine learning health app for automated anemia detection using SVM classifier trained on medical data, deployed via Streamlit for real-time diagnostic assistance.",
+    tags: ["Python", "Scikit-learn", "SVM", "Streamlit", "Healthcare AI"],
+    link: "https://github.com/M7MDdev1/Anemia-detection",
+    badge: "AI / ML",
+    badgeColor: "bg-[#1A8A3A] text-white",
+    featured: false,
+  },
+  {
+    name: "Bedar Platform",
+    desc: "Full rebuild of backend, frontend, and UI/UX for a local youth association's operations system. Built with TypeScript + PHP (Laravel) from scratch as volunteer lead.",
+    tags: ["TypeScript", "Laravel", "PHP", "React", "UI/UX"],
+    link: "https://github.com/M7MDdev1/Bedar",
+    badge: "VOLUNTEER",
+    badgeColor: "bg-[#4A4A4A] text-[#C0C0C0]",
+    featured: false,
+  },
+
+];
 
 export default function Projects() {
   return (
-    <div className="font-Poppins mb-10" id="projects">
-      <SubTitle className="mb-8">Projects</SubTitle>
-
-      {/* Featured — Bonian IDE */}
-      <div className="relative overflow-hidden p-6 rounded-xl border border-[#FFD200]/30 bg-gradient-to-br from-[#120D00] via-[#0E0E16] to-[#0E0E16] mb-8">
-        <div className="pointer-events-none absolute top-0 right-0 w-64 h-64 bg-yellow-500/10 blur-3xl rounded-full" />
-        <div className="relative z-10">
-          <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
-            <div>
-              <div className="flex items-center gap-2 mb-1">
-                <span className="px-2 py-0.5 text-xs rounded-full bg-[#FFD200]/20 border border-[#FFD200]/40 text-[#FFD200] font-bold">
-                  🏆 Ranked #1 — Graduation Project
+    <section id="projects" className="font-Poppins">
+      <XpWindow title="projects/ — Portfolio" icon="📁" titleRight={`${projects.length} items`}>
+        <div className="p-4 space-y-3">
+          {/* Featured */}
+          {projects.filter((p) => p.featured).map((p) => (
+            <div
+              key={p.name}
+              className="border border-[#4A3A00] bg-[#1A1500] rounded-[2px] overflow-hidden"
+            >
+              <div className="px-3 py-1 bg-[#FFD200]/10 border-b border-[#4A3A00] flex items-center justify-between">
+                <span className={`text-[0.6rem] font-mono font-black px-1.5 py-0.5 ${p.badgeColor} rounded-[1px]`}>
+                  {p.badge}
                 </span>
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[0.6rem] font-mono text-[#888] hover:text-[#FFD200] transition-colors flex items-center gap-1"
+                >
+                  view <FiExternalLink size={9} />
+                </a>
               </div>
-              <h3 className="text-xl font-bold text-white">Bonian IDE</h3>
+              <div className="p-4">
+                <h3 className="text-base font-bold text-[#FFD200] mb-2">{p.name}</h3>
+                <p className="text-xs text-[#909090] leading-relaxed mb-3">{p.desc}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {p.tags.map((t) => (
+                    <span key={t} className="px-2 py-0.5 text-[0.6rem] font-mono border border-[#4A3A00] bg-[#FFD200]/5 text-[#AA9000] rounded-[1px]">
+                      {t}
+                    </span>
+                  ))}
+                </div>
+              </div>
             </div>
+          ))}
+
+          {/* Other projects grid */}
+          <div className="grid sm:grid-cols-2 gap-3">
+            {projects.filter((p) => !p.featured).map((p) => (
+              <div
+                key={p.name}
+                className="border border-[#333] bg-[#1E1E1E] rounded-[2px] hover:border-[#4488EE]/50 transition-colors group"
+              >
+                <div className="px-3 py-1 bg-[#1A1A1A] border-b border-[#333] flex items-center justify-between">
+                  <span className={`text-[0.55rem] font-mono font-bold px-1 py-0.5 ${p.badgeColor} rounded-[1px]`}>
+                    {p.badge}
+                  </span>
+                  <a
+                    href={p.link}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="text-[0.6rem] font-mono text-[#555] hover:text-[#4488EE] transition-colors flex items-center gap-1"
+                  >
+                    view ↗
+                  </a>
+                </div>
+                <div className="p-3">
+                  <h3 className="text-sm font-bold text-[#D0D0D0] group-hover:text-[#4488EE] transition-colors mb-1.5">
+                    {p.name}
+                  </h3>
+                  <p className="text-[0.7rem] text-[#777] leading-relaxed mb-2">{p.desc}</p>
+                  <div className="flex flex-wrap gap-1">
+                    {p.tags.map((t) => (
+                      <span key={t} className="px-1.5 py-0.5 text-[0.55rem] font-mono border border-[#2A2A2A] text-[#555] rounded-[1px]">
+                        {t}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* Carousel for visual projects */}
+          <div className="border border-[#333] rounded-[2px] overflow-hidden">
+            <div className="px-3 py-1 bg-[#1A1A1A] border-b border-[#333]">
+              <span className="text-[0.6rem] font-mono text-[#555]">📸 screenshots/</span>
+            </div>
+            <Carousel />
+          </div>
+
+          <div className="flex justify-center pt-1">
             <a
-              href="https://github.com/M7MDdev1"
+              href="https://github.com/M7MDdev1?tab=repositories"
               target="_blank"
               rel="noreferrer"
-              className="flex items-center gap-1.5 text-sm text-[#A0A0A8] hover:text-white transition-colors"
+              className="px-4 py-1.5 text-xs font-mono bg-gradient-to-b from-[#3A3A3A] to-[#252525] text-[#C0C0C0] border-t border-l border-t-[#666] border-l-[#666] border-b border-r border-b-[#111] border-r-[#111] hover:from-[#4A4A4A] transition-colors rounded-[2px]"
             >
-              View <FiExternalLink size={14} />
+              📂 View all repositories on GitHub
             </a>
           </div>
-
-          <p className="text-sm text-[#A0A0A8] leading-relaxed mb-4">
-            A multimodal UML-to-code pipeline using Vision-Language Models as architectural
-            ground truth, integrated into an AI-enhanced Model-Driven Engineering (MDE) framework.
-            Reduces context decay and improves long-term code maintainability over text-only models.
-          </p>
-
-          <div className="flex flex-wrap gap-2">
-            {["UML", "Vision-Language Models", "Model-Driven Engineering", "AI", "Code Generation"].map(
-              (tag) => (
-                <span
-                  key={tag}
-                  className="px-2 py-0.5 text-xs rounded border border-[#FFD200]/30 text-[#FFD200]/80 bg-[#FFD200]/5"
-                >
-                  {tag}
-                </span>
-              )
-            )}
-          </div>
         </div>
-      </div>
 
-      {/* Other Projects Carousel */}
-      <p className="text-[#555] text-sm font-medium mb-5 tracking-wider uppercase">More projects</p>
-      <Carousel />
-
-      <a
-        href="https://github.com/M7MDdev1?tab=repositories"
-        target="_blank"
-        rel="noreferrer"
-        className="block w-fit px-5 py-2.5 mt-6 bg-[radial-gradient(49.91%_114.11%_at_22.77%_50%,#F0E9FF_0%,#FFF_100%)] border border-[#6D3AFD] text-sm text-black rounded-full mx-auto font-medium hover:opacity-90 transition-opacity"
-      >
-        View All on GitHub <GoArrowRight className="inline ml-1" />
-      </a>
-    </div>
+        <div className="px-3 py-1 bg-[#1E1E1E] border-t border-[#333] font-mono text-[0.6rem] text-[#555]">
+          {projects.length} projects &nbsp;|&nbsp; github.com/M7MDdev1
+        </div>
+      </XpWindow>
+    </section>
   );
 }
