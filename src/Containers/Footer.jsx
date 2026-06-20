@@ -1,36 +1,61 @@
-import SocialMedia from "../Components/SocialMedia";
+import { FaLinkedin, FaXTwitter } from "react-icons/fa6";
+import { LuGithub } from "react-icons/lu";
+import { FiMail } from "react-icons/fi";
 
 export default function Footer() {
   return (
-    <div
-      className={`pt-16 pb-10 px-5 font-Poppins bg-Footer-gradient
-    flex flex-col items-center justify-center`}
-    >
-      <img
-        src="W_Logo.png"
-        alt="Logo"
-        className={"h-14 pl-9 mb-10 self-start"}
-      />
+    <div className="pt-16 pb-10 px-5 font-Poppins bg-Footer-gradient flex flex-col items-center justify-center">
+      <img src="W_Logo.png" alt="Logo" className="h-12 mb-10 self-start pl-2" />
 
-      <h3 className="text-white text-[0.9375rem] mb-5">
-        "Building the future, one line of code at a time."
+      <h3 className="text-white text-xl font-semibold mb-3 text-center">
+        Let&apos;s build something great together.
       </h3>
-      <p className="text-xs mx-[3.70rem] font-light leading-[1.375rem] text-center">
-        We’re a diverse and passionate team that takes ownership of your design
-        and empower you to execute the roadmap. We stay light on our feet and
-        truly enjoy delivering great work.
+      <p className="text-sm text-[#888] mb-2 text-center">
+        Open to full-time roles, internships, and collaboration.
       </p>
-      <div className="py-5 px-4 relative">
-        <SocialMedia isCenter={true} />
-        <img
-          src="Languages.png"
-          alt="Languages"
-          className="-translate-y-48 absolute"
-        />
-        <p className="leading-[0.875rem] text-[0.8125rem] text-center mt-10">
-          © 2024 Mohammed Mahjari. All rights reserved.
-        </p>
+      <a
+        href="mailto:official.muhmmad.ahmad@gmail.com"
+        className="text-[#A084FF] hover:text-white text-sm mb-8 transition-colors"
+      >
+        official.muhmmad.ahmad@gmail.com
+      </a>
+
+      <div className="flex gap-3 mb-10">
+        <a
+          href="https://x.com/m7md_dev1"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2.5 z-20 border border-[#2F2F37] hover:border-[#6D3AFD]/60 rounded-full flex transition-colors"
+        >
+          <FaXTwitter size={18} />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/mohammed-mohjri/"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2.5 z-20 border border-[#2F2F37] hover:border-[#6D3AFD]/60 rounded-full flex transition-colors"
+        >
+          <FaLinkedin size={18} />
+        </a>
+        <a
+          href="https://github.com/M7MDdev1"
+          target="_blank"
+          rel="noreferrer"
+          className="p-2.5 z-20 border border-[#2F2F37] hover:border-[#6D3AFD]/60 rounded-full flex transition-colors"
+        >
+          <LuGithub size={18} />
+        </a>
+        <a
+          href="mailto:official.muhmmad.ahmad@gmail.com"
+          className="p-2.5 z-20 border border-[#2F2F37] hover:border-[#6D3AFD]/60 rounded-full flex transition-colors"
+        >
+          <FiMail size={18} />
+        </a>
       </div>
+
+      <p className="text-xs text-[#444] text-center">
+        © 2026 Mohammed Mahjari. All rights reserved.
+      </p>
     </div>
   );
 }

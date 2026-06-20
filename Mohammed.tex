@@ -1,0 +1,238 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{{#1 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+\newcommand{\metric}[1]{\textbf{#1}}
+
+\begin{document}
+
+% ---- HEADING ----
+\begin{center}
+    \textbf{\Huge \scshape Mohammed Mahjari} \\ \vspace{4pt}
+    \small
+    +966 55 674 4016 $|$
+    \href{mailto:official.muhmmad.ahmad@gmail.com}{\underline{official.muhmmad.ahmad@gmail.com}} $|$
+    \href{https://linkedin.com/in/mohammed-mohjri}{\underline{linkedin.com/in/mohammed-mohjri}} $|$
+    \href{https://github.com/M7MDdev1}{\underline{github.com/M7MDdev1}} $|$
+    \href{https://m7md.co}{\underline{m7md.co}}
+\end{center}
+
+% ---- SUMMARY ----
+\section{Summary}
+  \small{
+    Full-Stack Software Engineer and Co-Founder with a track record of shipping production systems --- from a \textbf{microservices-based commercial platform} (Serah) reaching \textbf{12,000+ employers} across Saudi Arabia, to health-tech and enterprise fintech applications at \textbf{KACST} and \textbf{Ebra.ai}. Comfortable across the full stack using \textbf{Laravel}, \textbf{React}, \textbf{Next.js}, and \textbf{Flask}. Ranked \metric{1st} in graduation project at Jazan University (CS Department) and selected among the \metric{top 200} of 3,000+ applicants for the KAUST Cybersecurity Program. Brings a strong mix of engineering depth, security awareness, and hands-on leadership.
+  }
+
+\vspace{2pt}
+
+% ---- EXPERIENCE ----
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Co-Founder \& Software Engineer}{Mar. 2026 -- Present}
+      {Sehrah $|$ \href{https://serah.store}{\underline{serah.store}}}{Microservices, SMTP, Next.js, Google Forms}
+      \resumeItemListStart
+        \resumeItem{Architected and deployed a \metric{microservices} system with a dedicated SMTP mail-sending service and a separate dashboard service, enabling independently scalable components}
+        \resumeItem{Built a client management dashboard that ingests leads from \metric{Google Forms}, displays client records, and enables one-click triggering of personalized resume distribution campaigns}
+        \resumeItem{Engineered an automated email delivery pipeline sending tailored resume submissions to recruiters across a curated database of \metric{12,000+} employers in Saudi Arabia}
+        \resumeItem{Delivered end-to-end ownership of a live commercial service covering resume sending, ATS-optimized resume design, and resume consultation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Jan. 2026 -- Apr. 2026}
+      {Ebra.Ai $|$ \href{https://drive.google.com/file/d/1kLDQiSK5mVVJ14284zqw9NFVpJ8r6SD2/view?usp=sharing}{\underline{Certificate}}}{Internship}
+      \resumeItemListStart
+        \resumeItem{Gained production-grade exposure to \metric{microservices architecture} on a large-scale debt collection platform serving enterprise clients including \metric{Zain}, \metric{SDB}, and \metric{ACIG}}
+        \resumeItem{Resolved critical bugs across distributed services, improving system stability and reliability for high-value financial clients}
+        \resumeItem{Implemented secure coding practices to safeguard sensitive financial data and minimize security vulnerabilities}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Jun. 2025 -- Aug. 2025}
+      {King Abdulaziz City for Science and Technology (KACST) $|$ \href{https://drive.google.com/file/d/11nhZ4IlFd_xPXfLy5T-NxemcF6wppDgC/view?usp=sharing}{\underline{Certificate}}}{Internship}
+      \resumeItemListStart
+        \resumeItem{Owned full-stack development of a health-tech platform, delivering a web application and cross-platform mobile app using \metric{Laravel}, \metric{React}, \metric{Inertia.js}, and \metric{Flask}}
+        \resumeItem{Integrated AI models from the KACST research team into a production-ready product, bridging R\&D outputs with real-world deployment}
+        \resumeItem{Contributed to R\&D initiatives, evaluating and prototyping new features and emerging technologies}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Instructor}{Aug. 2025}
+      {Tuwaiq Academy}{Contract $\cdot$ Al Qasim, Saudi Arabia}
+      \resumeItemListStart
+        \resumeItem{Instructed \metric{2 batches} of students at Qassim University in the ``Safik Thaki'' program, teaching Python programming fundamentals}
+        \resumeItem{Designed lesson plans emphasizing problem-solving and creativity; received positive student feedback across both cohorts}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Front-End Developer}{Jun. 2024 -- Jul. 2024}
+      {The Garage $|$ \href{https://drive.google.com/file/d/15y2eeOO8qvOEawHidHFDownuc0Kph1RG/view}{\underline{Certificate}}}{Internship $\cdot$ Riyadh, Saudi Arabia}
+      \resumeItemListStart
+        \resumeItem{Developed responsive UI components for \metric{2 client projects} using \metric{React}, \metric{TypeScript}, and \metric{Tailwind CSS}}
+        \resumeItem{Integrated REST APIs and followed the full product lifecycle --- from Business Analyst requirement sessions to development delivery}
+        \resumeItem{Strengthened team collaboration through structured Git/GitHub workflows in an agile environment}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Entry Supervisor}{Feb. 2023 -- Dec. 2023}
+      {Saeed Al-Namaa General Services}{Part-time $\cdot$ Jazan, Saudi Arabia}
+      \resumeItemListStart
+        \resumeItem{Onboarded and trained \metric{3 new employees}, ensuring proficiency across all assigned responsibilities within the expected ramp-up period}
+        \resumeItem{Developed a user-friendly website providing comprehensive access to all company services, improving client accessibility}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% ---- PROJECTS ----
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Bonian IDE} $|$ \emph{UML, Vision-Language Models, Model-Driven Engineering}}{Graduation Project $\cdot$ Ranked \metric{1st}}
+          \resumeItemListStart
+            \resumeItem{Engineered a multimodal UML-to-code pipeline using Vision-Language Models as an architectural ground truth, improving design-to-code alignment over text-only models}
+            \resumeItem{Integrated visual blueprints into an AI-enhanced Model-Driven Engineering (MDE) framework, reducing context decay and improving long-term code maintainability}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+% ---- EDUCATION ----
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jazan University}{Jazan, Saudi Arabia}
+      {Bachelor of Science in Computer Science}{2021 -- 2026}
+      \resumeItemListStart
+        \resumeItem{GPA: \metric{4.74}/5.00 $|$ Ranked \metric{1st} in graduation project among the Computer Science Department}
+        \resumeItem{Relevant Coursework: Web Programming, OOP, Software Engineering, MySQL, Data Structures}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+% ---- SKILLS ----
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages:}{ HTML, CSS, JavaScript/TypeScript, PHP, C\#, Java, Python} \\
+     \textbf{Frameworks:}{ Next.js, React, Laravel, Nest.js, Flask, Inertia.js} \\
+     \textbf{Tools \& Platforms:}{ Git/GitHub, Unix, Bash, Firebase, Figma, SMTP, Google Forms API, Android Studio} \\
+     \textbf{Architecture:}{ Microservices, REST APIs, Full-Stack Web \& Mobile Development} \\
+     \textbf{Cybersecurity:}{ OSINT, Web Security, Cryptanalysis, Vulnerability Assessment} \\
+     \textbf{Soft Skills:}{ Team Leadership, Public Speaking, Instruction, Cross-functional Collaboration}
+    }}
+ \end{itemize}
+
+
+% ---- CERTIFICATIONS ----
+\section{Certifications \& Training}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{KAUST Cybersecurity Program} -- Selected as one of the \metric{top 200} of 3,000+ applicants nationwide \\
+     \hspace*{1em} Topics: OSINT, Web Security, Cryptanalysis, Vulnerability Assessment
+    }}
+ \end{itemize}
+
+
+% ---- VOLUNTEERING & STUDENT CLUBS ----
+\section{Volunteering \& Student Clubs}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {President, Google Developer Student Club (GDSC)}{2024 -- 2025}
+      {Jazan University}{Student Club}
+      \resumeItemListStart
+        \resumeItem{Led the Google Developer Student Club chapter at Jazan University, organizing technical events including panel discussions, workshops, and coverage of the LEAP exhibition}
+        \resumeItem{Fostered a campus community around technology, software development, and career readiness for fellow students}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer \& Volunteer}{Aug. 2024 -- Jun. 2025}
+      {Bedar for Youth Development}{Volunteer}
+      \resumeItemListStart
+        \resumeItem{Led a volunteer engineering team in rebuilding the backend, frontend, and UI/UX of an existing operations system for a local youth association}
+        \resumeItem{Designed and launched a modern landing page to improve public-facing user experience and highlight the association's mission}
+        \resumeItem{Organized and contributed to \metric{6+} community tech events through GDG on Campus Jazan University, including Speaker Sessions, Workshops, and a National Day event (Sep. 2024 -- Feb. 2025)}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+% ---- LANGUAGES ----
+\section{Languages}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{English:}{ IELTS 6.5} \\
+     \textbf{Arabic:}{ Native}
+    }}
+ \end{itemize}
+
+\end{document}
